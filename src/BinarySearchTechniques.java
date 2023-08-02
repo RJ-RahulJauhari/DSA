@@ -10,7 +10,6 @@ public class BinarySearchTechniques {
 
     public static int BinarySearch_InSortedArray_Iterative(int[] arr, int element){
         int left = 0;
-        // Testing
         int right = arr.length-1;
         System.out.println("Element to be found is :"+element);
         PrintArrayInRange(arr,left,right);
