@@ -8,8 +8,7 @@ public class main {
         heap.insert(15);
         heap.insert(1);
         heap.printHeap();
-
-        heap.delete(-1);
         heap.printHeap();
+        heap.sort();
     }
 }

@@ -63,6 +63,21 @@ public class MinHeap {
         }
     }
 
+    public void sort(){
+        for(int i = 0; i < HeapArr.size();i++){
+            int left = 2*i + 1;
+            int right = 2*i + 2;
+            int cur = HeapArr.get(i);
+
+            if(right >= HeapArr.size() || left >= HeapArr.size()) break;
+
+            if((cur > HeapArr.get(left) || cur > HeapArr.get(right))){
+                heapify(HeapArr,i);
+            }
+        }
+        printHeap();
+    }
+
     public static void swap(ArrayList<Integer> arr,int ind1, int ind2){
         int temp = arr.get(ind1);
         arr.set(ind1,arr.get(ind2));
